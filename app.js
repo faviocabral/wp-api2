@@ -1,7 +1,7 @@
 const fs = require('fs')
 const express = require('express')
 const app = express()
-const port = 5010
+const port = 5001
 const qrcode = require('qrcode-terminal');
 const { Client,LocalAuth , Buttons , List} = require('whatsapp-web.js');
 const {moment } = require('moment');
