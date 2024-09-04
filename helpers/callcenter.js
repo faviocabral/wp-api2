@@ -16,7 +16,7 @@ const recordatorio = async(client, cita )=>{
     let saludo = ( Number( moment().format('HH')) < 12 )?'Buenos dias':'Buenas tardes'
     let clearNumber = `595${cita.celular.slice(-9)}@c.us`
     console.log(clearNumber)
-    let mensaje = `*CALL CENTER *\n\n${saludo}, Sr/Sra. *${cita.cliente}* \n✅Su cita se encuentra reservada\n🗓️ *Día:* ${cita.fecha}\n⏰ *Hora:* ${cita.hora}hs\n🏣 *Taller:* ${cita.taller}\n🚩 *Direccion:* ${cita.direccion}\n📍 *Ubicacion:* ${cita.ubicacion}\nLe esperamos en nuestros Locales❗️ ` //button body 
+    let mensaje = `*CALL CENTER*\n\n${saludo}, Sr/Sra. *${cita.cliente}* \n✅Su cita se encuentra reservada\n🗓️ *Día:* ${cita.fecha}\n⏰ *Hora:* ${cita.hora}hs\n🏣 *Taller:* ${cita.taller}\n🚩 *Direccion:* ${cita.direccion}\n📍 *Ubicacion:* ${cita.ubicacion}\nPor favor responda *ok* para confirmar su cita gracias.\nLe esperamos en nuestros Locales❗️` //button body 
 
     /*let mensaje = new Buttons(
         `Buenas tardes Sr/Sra. ${cita.cliente}\n✅Su cita se encuentra reservada\n🗓️ Día: ${cita.fecha}\n⏰ Horario: ${cita.hora}hs\n📍 Taller: ${cita.ubicacion}\nLe esperamos ❗️ `, //button body 
